@@ -15,7 +15,7 @@ spec:
       containers:
       - name: worker
         # REEMPLAZA CON TU IMAGEN DE DOCKER HUB
-        image: jukgh/primos-distribuidos:v1
+        image: jukhg/primos-distribuidos:v1
         # Sobreescribimos el comando para que corra el script del worker
         command: ["python", "-u", "app/worker.py"] 
         env:
