@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: worker-primos
 spec:
-  replicas: 3 # ¡Aquí demuestras el poder distribuido!
+  replicas: 3 # Número de workers en la búsqueda
   selector:
     matchLabels:
       app: worker
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: worker
-        # REEMPLAZA CON TU IMAGEN DE DOCKER HUB
+        # IMAGEN DE DOCKER HUB
         image: jukhg/primos-distribuidos:v1
         # Sobreescribimos el comando para que corra el script del worker
         command: ["python", "-u", "app/worker.py"] 
