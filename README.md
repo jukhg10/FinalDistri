@@ -5,14 +5,14 @@
 
 ---
 
-##  Índice
+## Índice
 
-1. [¿Cómo funciona el sistema? (Versión simple)](#-cómo-funciona-el-sistema-versión-simple)
-2. [Arquitectura técnica](#-arquitectura-técnica)
-3. [Guía paso a paso para usar el sistema](#-guía-paso-a-paso-para-usar-el-sistema)
-4. [Guía de uso de la API](#-guía-de-uso-de-la-api)
-5. [Solución de problemas](#-solución-de-problemas)
-6. [Preguntas frecuentes](#-preguntas-frecuentes)
+1. [¿Cómo funciona el sistema? (Versión simple)](#cómo-funciona-el-sistema-versión-simple)
+2. [Arquitectura técnica](#arquitectura-técnica)
+3. [Guía paso a paso para usar el sistema](#guía-paso-a-paso-para-usar-el-sistema)
+4. [Guía de uso de la API](#guía-de-uso-de-la-api)
+5. [Solución de problemas](#solución-de-problemas)
+6. [Preguntas frecuentes](#preguntas-frecuentes)
 
 ---
 
