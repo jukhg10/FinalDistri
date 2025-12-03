@@ -41,7 +41,7 @@ Imagina que tienes una **fábrica de números primos**:
 
 ### ¿Por qué es rápido?
 
-En lugar de tener **1 persona** buscando 5 números (lento), tienes **3 personas** trabajando al mismo tiempo. Si aumentas a 10 workers, ¡será aún más rápido!
+En lugar de tener **1 persona** buscando 5 números, se tiene a **3 personas** trabajando al mismo tiempo. Si se aumenta a 10 workers, será más rápida la búsqueda
 
 ---
 
