@@ -1,3 +1,6 @@
+##Joan David Martínez Hernández - 160004716
+##Julian Camilo Diez Baquero - 160004509
+
 # Sistema Distribuido de Generación de Números Primos
 
 > **¿Qué hace este programa?**  
