@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: api-server
-        # REEMPLAZA CON TU IMAGEN DE DOCKER HUB
+        # IMAGEN DE DOCKER HUB
         image: jukhg/primos-distribuidos:v1 
         command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
         env:
