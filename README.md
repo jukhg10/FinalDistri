@@ -33,11 +33,11 @@ Imagina que tienes una **fábrica de números primos**:
 
 ### Paso a paso:
 
-1. **Tú haces una solicitud** → "Quiero 5 números primos de 12 dígitos"
+1. **Se realiza una solicitud** → "Quiero 5 números primos de 12 dígitos"
 2. **El sistema crea 5 tareas** → Cada tarea = "Encuentra 1 número primo"
 3. **3 trabajadores (workers) compiten** → Toman tareas y buscan números primos
 4. **Se guardan en la base de datos** → Los resultados quedan almacenados
-5. **Tú consultas los resultados** → Cuando todo esté listo, obtienes tus 5 números
+5. **Se consulta los resultados** → Cuando todo esté listo, obtienes tus 5 números
 
 ### ¿Por qué es rápido?
 
