@@ -78,7 +78,7 @@ En lugar de tener **1 persona** buscando 5 números, se tiene a **3 personas** t
 
 ### **Opción A: Usar en la nube (Killercoda - GRATIS)**
 
-> **Recomendado para principiantes**: No necesitas instalar nada en tu computadora.
+> **Recomendado**
 
 #### **PASO 1: Acceder al entorno de Kubernetes**
 
@@ -187,7 +187,7 @@ curl -X POST http://localhost:30000/new \
 {"id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"}
 ```
 
-> **IMPORTANTE**: Copia ese `id`, lo necesitarás para los siguientes pasos.
+> **IMPORTANTE**: Copiar este `id` para los siguientes pasos.
 
 #### **¿Qué pasó?**
 El sistema creó 5 tareas y las puso en la cola. Los 3 workers están ahora buscando números primos.
@@ -251,7 +251,7 @@ curl http://localhost:30000/result/a1b2c3d4-e5f6-7890-abcd-ef1234567890; echo
 }
 ```
 
-**Listo!** Estos son tus 5 números primos de 12 dígitos.
+Estos son los 5 números primos de 12 dígitos.
 
 ---
 
@@ -283,14 +283,14 @@ curl http://localhost:30000/result/xyz-123-abc; echo
 
 **Solución:**
 
-1. Verifica que los pods estén corriendo:
+1. Verificar que los pods estén corriendo:
    ```bash
    kubectl get pods
    ```
    
-2. Si algún pod está en estado `Pending` o `Error`, espera 1-2 minutos y vuelve a verificar.
+2. Si algún pod está en estado `Pending` o `Error`, esperar 1-2 minutos y vuelve a verificar.
 
-3. Si persiste, reinicia el despliegue:
+3. Si persiste, reiniciar el despliegue:
    ```bash
    kubectl delete -f k8s/
    kubectl apply -f k8s/
@@ -335,7 +335,7 @@ curl http://localhost:30000/result/xyz-123-abc; echo
 
 ### **2. ¿Puedo cambiar el número de dígitos?**
 
-Sí, puedes solicitar números primos de **cualquier tamaño**:
+Sí, se puede solicitar números primos de **cualquier tamaño**:
 
 ```bash
 # Números de 8 dígitos (más rápido)
@@ -351,7 +351,7 @@ curl -X POST http://localhost:30000/new \
 
 ---
 
-### **3. ¿Cómo detengo el sistema?**
+### **3. ¿Cómo detener el sistema?**
 
 ```bash
 kubectl delete -f k8s/
@@ -369,7 +369,7 @@ Esto detiene y elimina todos los servicios.
 
 ### **5. ¿Puedo hacer múltiples solicitudes al mismo tiempo?**
 
-Sí! Cada solicitud recibe un ID único. Puedes tener 10 solicitudes diferentes procesándose simultáneamente.
+Sí, cada solicitud recibe un ID único. Se puede tener 10 solicitudes diferentes procesándose simultáneamente.
 
 ```bash
 # Solicitud 1
@@ -395,17 +395,6 @@ Cada una tendrá su propio ID y se procesarán en paralelo.
 | **Python** | Lenguaje de programación |
 
 
-
-##  Soporte
-
-Si tienes problemas:
-
-1. **Revisa la sección [Solución de problemas](#-solución-de-problemas)**
-2. **Abre un Issue** en GitHub: [https://github.com/jukhg10/FinalDistri/issues](https://github.com/jukhg10/FinalDistri/issues)
-3. **Verifica los logs** de los pods:
-   ```bash
-   kubectl logs -l app=worker
-   ```
 
 ---
 
