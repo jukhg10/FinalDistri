@@ -72,8 +72,6 @@ En lugar de tener **1 persona** buscando 5 números, se tiene a **3 personas** t
 
 ### Algoritmo:
 - **Test de primalidad "puro"**: División por tentativa hasta la raíz cuadrada
-- **Garantía matemática**: 100% de certeza (no probabilístico)
-
 ---
 
 ##  Guía paso a paso para usar el sistema
